@@ -1,0 +1,18 @@
+services:
+  # Deploy the entire fullstack app as a single service using Docker
+  - type: web
+    name: eco-awaaz-admin
+    runtime: docker
+    plan: free
+    envVars:
+      - key: DB_URL
+        sync: false
+        description: "PostgreSQL Database URL (e.g. jdbc:postgresql://db.supabase.co:5432/postgres)"
+      - key: DB_USERNAME
+        sync: false
+        description: "PostgreSQL Database Username"
+      - key: DB_PASSWORD
+        sync: false
+        description: "PostgreSQL Database Password"
+      - key: PORT
+        value: 10000

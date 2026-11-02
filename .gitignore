@@ -1,0 +1,36 @@
+# Dependency Directories
+node_modules/
+Frontend/node_modules/
+
+# Production/Build outputs
+dist/
+Frontend/dist/
+target/
+Backend/target/
+
+# Generated resources (Frontend static files copied to Backend)
+Backend/src/main/resources/static/
+
+# Environment configurations (credentials)
+.env
+.env.local
+.env.*.local
+Frontend/.env
+Frontend/.env.local
+Backend/.env
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+*.log
+
+# Compiler outputs & diagnostics logs
+Frontend/ts-errors.txt
+Frontend/tsc-out.txt
+Frontend/lint-errors.txt
